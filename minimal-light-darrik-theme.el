@@ -1,4 +1,4 @@
-;;; minimal-light-theme.el --- A minimal theme based on xterm-256 color set
+;;; minimal-light-darrik-theme.el --- A minimal theme based on xterm-256 color set
 
 ;; This file is not part of GNU Emacs.
 
@@ -6,17 +6,17 @@
 ;; Authors: Amirreza Ghaderi <amirreza.blog@gmail.com>
 ;; Version: 0.9
 ;; Keywords: syntax, highlight, theme, minimal, xterm
-;; URL: 
+;; URL:
 ;; Compatibility: GNU Emacs 24.x
 
 ;;; Commentary:
 
-;; Im not a big fan of syntax highlighting! to me, syntax highlighting is not 
+;; Im not a big fan of syntax highlighting! to me, syntax highlighting is not
 ;; only reduce code readability, but its also a distraction! of course many
 ;; programmers may not agree with this opinion, but for those who do,
-;; 'minimal-light' is a VERY minimalistic color theme which use xterm-256 color set
-;; so it has a unified look in both GUI and in Terminal. there is also a 
-;; 'dark' version of this color theme (minimal-dark). 
+;; 'minimal-light-darrik' is a VERY minimalistic color theme which use xterm-256 color set
+;; so it has a unified look in both GUI and in Terminal. there is also a
+;; 'dark' version of this color theme (minimal-dark).
 
 ;;; License:
 ;; Use of this source code is governed by the 'Revised BSD License'
@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(deftheme minimal-light
+(deftheme minimal-light-darrik
   "A minimal theme based on xterm-256 color set [light version]")
 
 (let ((black016  "#000000")   ;; black
@@ -41,16 +41,16 @@
 
   ;; Set faces
   (custom-theme-set-faces
-   'minimal-light
-   
+   'minimal-light-darrik
+
    `(default ((t (:foreground ,gray243 :background ,yellow230))))
    `(cursor  ((t (:background ,black016))))
-   
+
    ;; Highlighting faces
-   `(fringe    ((t (:background ,gray255))))   
+   `(fringe    ((t (:background ,gray255))))
    `(highlight ((t (:background ,white231))))
    `(region    ((t (:background ,yellow187))))
-   
+
    ;; Font lock faces
    `(font-lock-string-face        ((t (:foreground ,blue066))))
    `(font-lock-comment-face       ((t (:foreground ,gray249))))
@@ -64,35 +64,35 @@
    ;;parens
    `(show-paren-mismatch   ((t (:foreground ,blue066 :background ,gray255 :weight bold))))
    `(show-paren-match      ((t (:foreground ,red160  :background ,gray255 :weight bold))))
-	
+
    ;; line numbers, current line, mode-line
    ;`(hl-line-face ((t (:background ,red160 :weight bold))))
    `(hl-line      ((t (:background ,yellow187))))  ;;current line
    `(linum        ((t (:background ,gray253))))    ;;line numbers
    `(mode-line    ((t (:foreground ,yellow230 :background ,gray243 :box nil))))
-   
+
    ;; web-mode
    `(web-mode-html-tag-face          ((t (:foreground ,gray243 :weight bold))))
    `(web-mode-html-attr-name-face    ((t (:foreground ,gray243 ))))
    `(web-mode-css-property-name-face ((t (:foreground ,gray243 :weight bold))))
    `(web-mode-keyword-face           ((t (:foreground ,gray243 :weight bold))))
    `(web-mode-builtin-face           ((t (:foreground ,gray243 :weight bold))))
-   
+
    )
 
   ;; Set variables
   (custom-theme-set-variables
-   'minimal-light 
+   'minimal-light-darrik
    ;'(other variables)
    )
 )
 
-(provide-theme 'minimal-light)
+(provide-theme 'minimal-light-darrik)
 
 
 ;; Local Variables:
 ;; no-byte-compile: t
-;; End:    
+;; End:
 
-;;; minimal-light-theme.el ends here
+;;; minimal-light-darrik-theme.el ends here
 
