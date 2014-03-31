@@ -1,8 +1,8 @@
-# Minimal Theme
+# Minimal Theme (Rikard's fork)
 
 A minimal theme based on xterm-256 color set.
 
-Im not a big fan of syntax highlighting! to me, syntax highlighting is not 
+Im not a big fan of syntax highlighting! to me, syntax highlighting is not
 only reduce code readability, but its also a distraction! of course many
 programmers may not agree with this opinion, but for those who do,
 this color theme is a **VERY** minimalistic color theme which use xterm-256 color set
@@ -13,7 +13,7 @@ it comes in two versions: `dark`, and `light`.
 
 Just place these files somewhere in you Emacs' `load-path`, and add them in your `init.el`:
 
-    (load-theme 'minimal-dark t)
+    (load-theme 'minimal-dark-darrik t)
     ;or
     (load-theme 'minimal-light t)
 
